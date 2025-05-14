@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>もちピとは</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #FFCCFF;
+      background-image: url("background.png");
+      background-repeat: repeat;
+      animation: scrollBg 60s linear infinite;
+      font-family: "MS Gothic", "Osaka", sans-serif;
+      text-align: center;
+      color: #000;
+    }
+
+    @keyframes scrollBg {
+      from { background-position: 0 0; }
+      to { background-position: -512px -512px; }
+    }
+
+    .main-window {
+      width: 90%;
+      max-width: 900px;
+      margin: 60px auto;
+      background-color: #ffffffdd;
+      border: 4px double #000088;
+      padding: 30px;
+      box-shadow: 5px 5px #8888ff;
+    }
+
+    .main-image {
+      max-width: 100%;
+      height: auto;
+      image-rendering: pixelated;
+    }
+
+    .main-text {
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.7;
+      max-height: 400px;
+      overflow-y: auto;
+      padding: 10px;
+      border: 2px dashed #888;
+      background-color: #fffff9;
+      margin-top: 20px;
+    }
+
+    .back-button {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ddddff;
+      border: 2px solid #000088;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      color: black;
+      box-shadow: 2px 2px #8888ff;
+    }
+
+    .back-button:active {
+      transform: translate(2px, 2px);
+      box-shadow: none;
+    }
+
+    @media (max-width: 600px) {
+      .main-window {
+        padding: 15px;
+      }
+
+      .main-text {
+        font-size: 14px;
+        max-height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-window">
+    <div class="main-image-wrapper">
+      <img src="kame.png" alt="大きなPNG" class="main-image">
+    </div>
+
+    <div class="main-text">
+      【もちピ】とはいわゆるファンネームのことです<br><br>
+      当の本人もファンであるため、もちうつねの事を【もちピ】と呼んでも間違いではないよ    </div>
+
+    <a href="home.html" class="back-button">🏠 ホームに戻る</a>
+  </div>
+</body>
+</html>
