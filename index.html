@@ -252,7 +252,10 @@
 
   <div class="container">
     <h1>★もちうつねのホームページ★</h1>
-    <p class="visitor-counter">あなたは <span id="counter" class="rainbow-text">00001</span> 人目のお客様です！</p>
+<p class="visitor-counter">
+  あなたは <span id="counter" class="rainbow-text">00000</span> 人目のお客様です！
+</p>
+
   </div>
 
   <div>
@@ -316,5 +319,25 @@
       setTimeout(() => ripple.remove(), 600);
     });
   </script>
+
+
+<script>
+  const counterElement = document.getElementById("counter");
+
+  fetch("https://api.opencounter.dev/hit/mochiutsune-homepage/visitor-count")
+    .then(response => response.json())
+    .then(data => {
+      // カウント値を5桁に揃えて表示（例：00001）
+      counterElement.textContent = String(data.value).padStart(5, '0');
+    })
+    .catch(err => {
+      console.error("カウント取得エラー:", err);
+      counterElement.textContent = "error";
+    });
+</script>
+
+
+
+
 </body>
 </html>
