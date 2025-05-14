@@ -27,29 +27,80 @@
 /*フォント設定フォント設定フォント設定フォント設定フォント設定フォント設定フォント設定フォント設定フォント設定*/
 
 
+/* スマホ向け（幅が768px未満） */
+
+@media (max-width: 767px) {
     .ALL-window {
-      width: 90%;
-      max-width: 1980px;
+      width: 95%;
+      max-width: 720px;
       margin: 0px auto;
       background-color: black;
-      padding: 4px;
+      padding: 2px;
 box-shadow: 2px 2px White;
+ }
+}
 
-    }
+/* PC向け（幅が768px以上） */
+
+@media (min-width: 768px) {
+    .ALL-window {
+      width: 95%;
+      max-width: 1000px;
+max-height: 1000px;
+
+      margin: 0px auto;
+      background-color: black;
+      padding: 70px 0;
+box-shadow: 2px 2px White;
+ }
+}
+
+
+
+
+
 
 
 
 
 
     .title-window {
-      width: 95%;
-      max-width: 1980px;
+      width: 90%;
+      max-width: 400px;
       margin: 0px auto;
       background-color: #0022dd;
       padding: 4px;
 box-shadow: 2px 2px White;
+ }
+
+    .profile-section {
+      border: 2px solid #000088;
+ background-color: #ffffffdd;
+
+      margin-top: 10px;
+ box-shadow: 5px 5px #8888ff;
+
+      max-width: 900px;
+      margin: 10px auto;
+      background-color: #ffffffdd;
+      border: 4px double #000088;
+
+      box-shadow: 5px 5px #8888ff;
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     html, body {
       overflow-x: hidden;
@@ -62,15 +113,15 @@ box-shadow: 2px 2px White;
       color: white;
     }
 
-
-
-
     h2{
       font-size: clamp(10px, 5vw, 0px);
     }
 
+    h3{
+      font-size: clamp(2px, 0vw, 0px);
+margin: 10px 0 10px 0;
 
-
+    }
 
 
     body {
@@ -152,35 +203,6 @@ box-shadow: 2px 2px White;
       }
     }
 
-    .profile-section {
-      border: 2px solid #000088;
- background-color: #ffffffdd;
-
-      margin-top: 10px;
- box-shadow: 5px 5px #8888ff;
-
-
-
-
-
-
-
-
-      max-width: 900px;
-      margin: 10px auto;
-      background-color: #ffffffdd;
-      border: 4px double #000088;
-
-      box-shadow: 5px 5px #8888ff;
-
-
-
-
-
-
-
-
-    }
 
     .button-column {
       display: flex;
@@ -322,9 +344,15 @@ box-shadow: 2px 2px White;
 
 <div class="ALL-window">
 
-
   <div class="marquee-container">
     <div class="marquee-text">★ お知らせ：ホームページが新しくなりました ▶ 最新情報はTwitterでチェック！ ▶ ご連絡は mochiutsune@gmail.comまで★</div>
+  </div>
+
+
+  <div style="text-align: left;">
+    <h3><font size="1" color="White"  >
+www.mochiutsune.com
+</font></h3>
   </div>
 
   <div class="title-window">
@@ -355,6 +383,25 @@ box-shadow: 2px 2px White;
 
     <h2><font size="3" color="#778899">📨ご連絡はmochiutsune@gmail.comへ </font></h2>
   </div>
+
+
+
+
+  <div style="text-align: left;">
+    <h3><font size="1" color="White"  >
+
+
+
+
+/2024/02/25 楽曲「流行りのアイス」を公開しました<br>
+/2023/08/07 楽曲「風呂入るプロファイル」 を公開しました<br>
+
+
+
+
+</font></h3>
+  </div>
+
 
 
  </div>
